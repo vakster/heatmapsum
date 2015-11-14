@@ -81,7 +81,7 @@ input {
 }
 .tab label {
   background: #eee; 
-  padding: 10px; 
+  padding: 0px; 
   border: 1px solid #ccc; 
   margin-left: -1px; 
   position: relative;
