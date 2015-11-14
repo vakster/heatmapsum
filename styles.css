@@ -56,7 +56,9 @@ input {
 
 	color:#A41623;
 }
-
+small:hover {
+    color: yellow;
+}
 .learn {
 
 	color:#E8DE2A;
