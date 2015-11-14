@@ -81,7 +81,7 @@ input {
   margin: -50px;
 }
 .tab {
-  float: left;
+  float: top;
 }
 .tab label {
   background: #eee; 
@@ -94,14 +94,7 @@ input {
 .tab [type=radio] {
   display: none;   
 }
-.content {
-  position: absolute;
-  top: 10px;
-  left: auto;
-  background: black;
-  right: auto;
-  bottom: 0;
-}
+
 
 [type=radio]:checked ~ label {
   background: #ddd;
