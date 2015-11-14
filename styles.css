@@ -285,7 +285,7 @@ a:focus, a:hover {
 }
 
 .fade-in.one {
-	
+	float:left;
 -webkit-animation-delay: 1.7s;
 -moz-animation-delay: 1.7s;
 animation-delay: 1.7s;
@@ -296,9 +296,6 @@ animation-delay: 1.7s;
 -webkit-animation-delay: 2.7s;
 -moz-animation-delay: 2.7s;
 animation-delay: 2.7s;
-}
-.boxing {
-	float:left;
 }
 
 
