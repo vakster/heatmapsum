@@ -239,4 +239,12 @@ li {
 
 }
 
+a {
+    color: #E8DE2A;
+}
+
+a:focus, a:hover {
+    color: #000;
+    text-decoration: underline;
+}
 /** End: to style navigation tab **/
