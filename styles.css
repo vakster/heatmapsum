@@ -239,8 +239,8 @@ li {
 }
 
 #wrap {
-   width: 48px;
-   height: 48px;
+   width: auto;
+   height: auto;
 }
 
 #wrap img {
