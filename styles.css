@@ -71,7 +71,8 @@ input {
 }
 
 .content img {
-	
+ height: 100%;	
+ width:100%;
 }
 .tabs {
   position: relative;   
@@ -101,6 +102,7 @@ input {
   right: auto;
   bottom: 0;
 }
+
 [type=radio]:checked ~ label {
   background: #ddd;
   border-bottom: 3px solid #E8DE2A;
