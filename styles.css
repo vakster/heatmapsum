@@ -63,9 +63,10 @@ input {
 
 	color:#E8DE2A;
 }
+.learn:hover {
+    color: yellow;
+}
 .title {
 	color:;
 }
-.title:hover {
-    color: yellow;
-}
+
