@@ -3,6 +3,10 @@ body {
     background-color: black;
 }
 h3 {
+	color:gray;
+	font-size: 72px;
+}
+h3 {
 	color:orange;
 	font-size: 72px;
 }
