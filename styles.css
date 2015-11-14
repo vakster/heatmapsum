@@ -208,13 +208,13 @@ input {
 
 .nav-tabs > .active > a, .nav-tabs > .active > a:hover {
 
-    color: #555555;
+    color: #ddd;
 
     cursor: default;
 
-    background-color: #ffffff;
+    background-color: #fff;
 
-    border: 1px solid #ddd;
+    border: 5px solid #E8DE2A;
 
     border-bottom-color: transparent;
 
@@ -227,7 +227,8 @@ li {
 }
 
 .tab-content.active {
-
+    width:90%;
+    margin:10px;
     display: block;
 
 }
