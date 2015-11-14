@@ -28,10 +28,8 @@ p {
 #nav {
 	
 }
-form {
-  width: 550px;
-  height: 450px;
-  margin: auto;
-  position: relative;
+input {
+  width: 375px;
+  height: 25px;
 }
 
