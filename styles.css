@@ -30,7 +30,8 @@ p {
 }
 
 #footer p {
-	font-size:8px;
+	font-size:10px;
+	background-color:#444;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
