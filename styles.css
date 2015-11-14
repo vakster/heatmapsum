@@ -1,0 +1,42 @@
+@keyframes changecolor {
+	0% {background-color: black;}
+	25% {background-color: red;}
+	50% {background-color: blue;}
+	100% {background-color: purple;}
+	
+}
+
+#header
+{
+	background-color:purple;
+	color:yellow;
+	text-align:center;
+	padding:5px;
+	animation-name: changecolor;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#section {
+	float: left;
+	text-align:center;
+	padding: 10px;
+}
+#footer {
+	background-color:purple;
+	color:yellow;
+	text-align:center;
+	padding:5px;
+	animation-name: changecolor;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#nav {
+	background-
+}
+<p>What is life?</p>
+
+
