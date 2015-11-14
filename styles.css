@@ -96,7 +96,10 @@ input {
 }
 
 .burn:hover {
-
+	 float:left;
+-webkit-animation-delay: 3.7s;
+-moz-animation-delay: 3.7s;
+animation-delay: 3.7s;
     color: red;
 
 }
@@ -117,10 +120,7 @@ animation-delay: 3.7s;
 }
 
 .title {
-	 float:left;
--webkit-animation-delay: 3.7s;
--moz-animation-delay: 3.7s;
-animation-delay: 3.7s;
+
     color:;
 
 }
