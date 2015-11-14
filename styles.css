@@ -228,7 +228,6 @@ li {
 
 .tab-content.active {
     width:90%;
-    margin:10px;
     display: block;
 
 }
@@ -241,7 +240,6 @@ li {
 
 .wrap {
     width:90%;
-    margin:20px;
 }
 a {
     color: #E8DE2A;
