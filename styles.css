@@ -3,7 +3,7 @@ body {
     background-color: black;
 }
 h1 {
-	color:gray;
+	color:linear-gradient(top, #fff 0%, #fff 50%, #ddd 50%, #ddd 50.5%, #fff 50.5%, #fff 100%);
 	font-size: 72px;
 }
 h3 {
@@ -42,5 +42,5 @@ input {
 	color:#A41623;
 }
 .title {
-	
+	color:;
 }
