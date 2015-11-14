@@ -292,10 +292,13 @@ animation-delay: 1.7s;
 }
 
 .fade-in.two {
-	 float:left;
+	 
 -webkit-animation-delay: 2.7s;
 -moz-animation-delay: 2.7s;
 animation-delay: 2.7s;
+}
+.boxing {
+	float:left;
 }
 
 
