@@ -238,8 +238,13 @@ li {
 
 }
 
-.wrap {
-    width:90%;
+#wrap {
+   width: 48px;
+   height: 48px;
+}
+
+#wrap img {
+   width: 100%;
 }
 a {
     color: #E8DE2A;
