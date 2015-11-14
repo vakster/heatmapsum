@@ -77,7 +77,7 @@ input {
   position: relative;   
   min-height: 200px; /* This part sucks */
   clear: both;
-  margin: auto;
+  margin: -50px;
 }
 .tab {
   float: left;
