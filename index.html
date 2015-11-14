@@ -5,105 +5,83 @@
         <head>
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
             <link rel="stylesheet" href="styles.css">
-            
             <meta charset="UTF-8">
             <link rel="http://i.imgur.com/3qcrS4Z.png" href="favicon.ico" />
             <title>
                 <Tuition-Hack/>
             </title>
             <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
-	<script>
-	$(document).ready(function() {
-		$('.nav-tabs > li > a').click(function(event){
-		event.preventDefault();//stop browser to take action for clicked anchor
-					
-		//get displaying tab content jQuery selector
-		var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');					
-					
-		//find actived navigation and remove 'active' css
-		var actived_nav = $('.nav-tabs > li.active');
-		actived_nav.removeClass('active');
-					
-		//add 'active' css into clicked navigation
-		$(this).parents('li').addClass('active');
-					
-		//hide displaying tab content
-		$(active_tab_selector).removeClass('active');
-		$(active_tab_selector).addClass('hide');
-					
-		//show target tab content
-		var target_tab_selector = $(this).attr('href');
-		$(target_tab_selector).removeClass('hide');
-		$(target_tab_selector).addClass('active');
-	     });
-	  });
-	</script>
+            <script>
+                $(document).ready(function() {
+                    $('.nav-tabs > li > a').click(function(event) {
+                        event.preventDefault(); //stop browser to take action for clicked anchor
+
+                        //get displaying tab content jQuery selector
+                        var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');
+
+                        //find actived navigation and remove 'active' css
+                        var actived_nav = $('.nav-tabs > li.active');
+                        actived_nav.removeClass('active');
+
+                        //add 'active' css into clicked navigation
+                        $(this).parents('li').addClass('active');
+
+                        //hide displaying tab content
+                        $(active_tab_selector).removeClass('active');
+                        $(active_tab_selector).addClass('hide');
+
+                        //show target tab content
+                        var target_tab_selector = $(this).attr('href');
+                        $(target_tab_selector).removeClass('hide');
+                        $(target_tab_selector).addClass('active');
+                    });
+                });
+            </script>
         </head>
         
         <body>
             <div id="container" class="container">
                 <div class="row">
-                   <h1>< Tuition Hack />
+                     <h1>< Tuition Hack />
                    <small>Feel the <span class="burn">Burn</span> before you <span class="learn">Learn</span></small>
                    </h1>
                     <p>This is a heatmap to show the rising costs of tuition per year by region, state, and school.
-                    <br />Enter the year below to see the expected tuition costs.</p>
+                        <br />Enter the year below to see the expected tuition costs.</p>
                     <form>
                         <input type="text" placeholder="Please enter a year.">
                     </form>
                     <br />
-                    </div>
-                   <div>
-			<ul class="nav nav-tabs">
-				<li class="active">
-					<a href="#tab1">Show Tab 1</a>
-				</li>
-				<li>
-					<a href="#tab2">Show Tab 2</a>
-				</li>
-				<li>
-					<a href="#tab3">Show Tab 3</a>
-				</li>
-			</ul>	
-		</div>
-		<section id="tab1" class="tab-content active">
-			<div>
-				Content in tab 1
-			</div>
-		</section>
-		<section id="tab2" class="tab-content hide">
-			<div>
-				Content in tab 2
-			</div>
-		</section>
-		<section id="tab3" class="tab-content hide">
-			<div>
-				Content in tab 3
-			</div>
-		</section>
-</div>
-             
-                <br />
-                <div id="footer">
-                    <div class="container">
-                        <p class="muted credit">Copyright &copy; 2015 Hack Princeton</p>
-                        <p class="muted credit">Gregory Vaks, Matthew Newman, Joseph Stack, Daniel Saganome, Patrick Monaghan</p>
-                    </div>
                 </div>
-                <!--<div class="footer">
-                <p>Copyright &copy; 2015 Hack Princeton</p>
-                <p>Gregory Vaks, Matthew Newman, Joseph Stack, Daniel Saganome, Patrick Monaghan</p>
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="active">	<a href="#tab1">In-State Tuition</a>
+
+                        </li>
+                        <li>	<a href="#tab2">Out-of-State Tuition</a>
+
+                        </li>
+                        <li>	<a href="#tab3">Total Tuition</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <section id="tab1" class="tab-content active">
+                    <div><img src="http://i.imgur.com/cOeyPSb.jpg"></div>
+                </section>
+                <section id="tab2" class="tab-content hide">
+                    <div>Content in tab 2</div>
+                </section>
+                <section id="tab3" class="tab-content hide">
+                    <div>Content in tab 3</div>
+                </section>
             </div>
-            </div>-->
-                <script language="javascript" type="text/javascript">
-                    $(document).ready(function() {
-                        $("#mytabs").tabs({
-                            fx: {
-                                opacity: 'toggle'
-                            }
-                        });
-                    });
-                </script>
+            <br />
+            <div id="footer">
+                <div class="container">
+                    <p class="muted credit">Copyright &copy; 2015 Hack Princeton</p>
+                    <p class="muted credit">Gregory Vaks, Matthew Newman, Joseph Stack, Daniel Saganome, Patrick Monaghan</p>
+                </div>
+            </div>
         </body>
     
     </html>
