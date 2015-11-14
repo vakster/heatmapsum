@@ -56,7 +56,7 @@ input {
 
 	color:#A41623;
 }
-small:hover {
+.burn:hover {
     color: yellow;
 }
 .learn {
