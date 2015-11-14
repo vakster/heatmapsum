@@ -95,7 +95,7 @@ input {
 }
 .content {
   position: absolute;
-  top: auto;
+  top: 10px;
   left: auto;
   background: black;
   right: auto;
