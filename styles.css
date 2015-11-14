@@ -33,7 +33,7 @@ input {
   height: 25px;
 }
 
-#burn {
+.burn {
 	background: gray;
 	color:red;
 }
