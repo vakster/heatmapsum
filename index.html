@@ -5,12 +5,39 @@
         <head>
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
             <link rel="stylesheet" href="styles.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            
             <meta charset="UTF-8">
             <link rel="http://i.imgur.com/3qcrS4Z.png" href="favicon.ico" />
             <title>
                 <Tuition-Hack/>
             </title>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('.nav-tabs > li > a').click(function(event){
+		event.preventDefault();//stop browser to take action for clicked anchor
+					
+		//get displaying tab content jQuery selector
+		var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');					
+					
+		//find actived navigation and remove 'active' css
+		var actived_nav = $('.nav-tabs > li.active');
+		actived_nav.removeClass('active');
+					
+		//add 'active' css into clicked navigation
+		$(this).parents('li').addClass('active');
+					
+		//hide displaying tab content
+		$(active_tab_selector).removeClass('active');
+		$(active_tab_selector).addClass('hide');
+					
+		//show target tab content
+		var target_tab_selector = $(this).attr('href');
+		$(target_tab_selector).removeClass('hide');
+		$(target_tab_selector).addClass('active');
+	     });
+	  });
+	</script>
         </head>
         
         <body>
@@ -26,27 +53,36 @@
                     </form>
                     <br />
                     </div>
-                    <div class="row">
-                    <div class="tabs">
-                        <div class="tab">
-                            <input type="radio" id="tab-1" name="tab-group-1" checked>
-                            <label for="tab-1">Tab One</label>
-                            <div class="content">
-                                <img src="http://i.imgur.com/cOeyPSb.jpg">
-                            </div>
-                        </div>
-                        <div class="tab">
-                            <input type="radio" id="tab-2" name="tab-group-1">
-                            <label for="tab-2">Tab Two</label>
-                            <div class="content">helklo</div>
-                        </div>
-                        <div class="tab">
-                            <input type="radio" id="tab-3" name="tab-group-1">
-                            <label for="tab-3">Tab Three</label>
-                            <div class="content">world</div>
-                        </div>
-                    </div>
-                   </div>
+                   <div>
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#tab1">Show Tab 1</a>
+				</li>
+				<li>
+					<a href="#tab2">Show Tab 2</a>
+				</li>
+				<li>
+					<a href="#tab3">Show Tab 3</a>
+				</li>
+			</ul>	
+		</div>
+		<section id="tab1" class="tab-content active">
+			<div>
+				Content in tab 1
+			</div>
+		</section>
+		<section id="tab2" class="tab-content hide">
+			<div>
+				Content in tab 2
+			</div>
+		</section>
+		<section id="tab3" class="tab-content hide">
+			<div>
+				Content in tab 3
+			</div>
+		</section>
+</div>
+             
                 <br />
                 <div id="footer">
                     <div class="container">
