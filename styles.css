@@ -3,9 +3,19 @@ body {
     background-color: black;
 }
 h1 {
-	color:linear-gradient(top, #fff 0%, #fff 50%, #ddd 50%, #ddd 50.5%, #fff 50.5%, #fff 100%);
-	font-size: 72px;
-}
+		font-size: 72px;
+        text-decoration: none;
+        color: #666;
+        position: absolute;
+         
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(50%, rgba(0,0,0,.5)), to(rgba(0,0,0,1)));
+    }
+     
+    h1:after {
+        content : 'Hello World';
+        color: #d6d6d6;
+        text-shadow: 0 1px 0 white;
+    }
 h3 {
 	color:orange;
 	font-size: 48px;
