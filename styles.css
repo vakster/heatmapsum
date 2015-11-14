@@ -57,7 +57,7 @@ input {
 	color:#A41623;
 }
 .burn:hover {
-    color: yellow;
+    color: red;
 }
 .learn {
 
@@ -65,4 +65,7 @@ input {
 }
 .title {
 	color:;
+}
+.title:hover {
+    color: yellow;
 }
