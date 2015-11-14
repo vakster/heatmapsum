@@ -96,7 +96,7 @@ input {
 }
 
 .burn:hover {
-	 float:left;
+
 -webkit-animation-delay: 3.7s;
 -moz-animation-delay: 3.7s;
 animation-delay: 3.7s;
@@ -105,7 +105,7 @@ animation-delay: 3.7s;
 }
 
 .learn {
-	 float:left;
+
 -webkit-animation-delay: 3.7s;
 -moz-animation-delay: 3.7s;
 animation-delay: 3.7s;
