@@ -2,13 +2,13 @@
 body {
     background-color: black;
 }
-h3 {
+h1 {
 	color:gray;
 	font-size: 72px;
 }
 h3 {
 	color:orange;
-	font-size: 72px;
+	font-size: 48px;
 }
 p {
 	color:white;
@@ -40,4 +40,7 @@ input {
 .burn {
 
 	color:#A41623;
+}
+.title {
+	
 }
