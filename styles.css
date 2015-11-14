@@ -17,15 +17,8 @@ p {
 	padding: 10px;
 }
 footer {
-	background-color:purple;
-	color:yellow;
 	text-align:center;
-	padding:5px;
-	animation-name: changecolor;
-	animation-duration: 4s;
-	animation-delay: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+		font-size: 12px;
 }
 #nav {
 	
