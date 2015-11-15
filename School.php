@@ -82,7 +82,6 @@
                 $sumx2y += $key*$key*$currentYearCost;
             }
             
-            newvalue = ax^2 + bx + c
             // a = (( Σ x2y * Σ xx ) - (Σ xy * Σ xx2 )) / (( Σ xx * Σ x2x2) - (Σ xx2 * Σ xx2))
             // b = (( Σ xy * Σ x2x2 ) - (Σ x2y * Σ xx2 )) / (( Σ xx * Σ x2x2) - (Σ xx2 * Σ xx2 ))
             // c = ( Σ y / $numValues ) - ( b * ( Σ x / $numValues )) - ( a * ( Σ x2 / $numValues ))
