@@ -30,16 +30,17 @@ function initialize() {
       
     //  <!-- column three is the zipcode -->/
     // column 5 ia in state
+    //column 6 is out of state 
       
       styles: [
-       { where: "col6 > 30000",
+       { where: "col6",
          markerOptions: {
             iconName: 'small_blue'
          }
        },
-       { where: "col6 < 30000",
+       { where: "col5",
          markerOptions: {
-            iconName: 'small_orange'
+            iconName: 'small_rede'
          }
        }
             ],
