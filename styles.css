@@ -1,4 +1,6 @@
-
+.hidden {
+display: none;
+}
 h1 {
 	color:#ddd;
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
