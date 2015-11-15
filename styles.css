@@ -1,18 +1,27 @@
-
+h1 {
+    width: 100px;
+    height: 100px;
+    color: red;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    font-size: 48px;
+}
 /* Chrome, Safari, Opera */
 @-webkit-keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+    0%   {color: red;}
+    25%  {Color: yellow;}
+    50%  {Color: blue;}
+    100% {color: green;}
 }
 
 /* Standard syntax */
 @keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
 }
 input[type=checkbox] {
 	visibility: hidden;
@@ -172,20 +181,7 @@ body {
 
 }
 
-h1 {
 
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 4s;
-    font-size: 48px;
-
-    
-
-}
 
 h2 {
 	float:left;
