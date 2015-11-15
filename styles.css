@@ -23,7 +23,7 @@ float:left;
 #in-out-state:after {
 	content: 'OUT';
 	font: 12px/26px Arial, sans-serif;
-	color: #000;
+	color: #00bb00;
 	position: absolute;
 	right: 10px;
 	z-index: 0;
