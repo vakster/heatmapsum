@@ -33,7 +33,7 @@ function initialize() {
     //column 6 is out of state 
       
       styles: [
-       { where: "col5 IN col6",
+       { where: "col5 AND col6",
          markerOptions: {
             iconName: 'small_orange'
          }
