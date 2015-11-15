@@ -49,18 +49,14 @@ function initialize() {
     
 google.maps.event.addDomListener(document.getElementById('heatmap'),
             'click', function() {
-                
-                 // what data for the heatmap and how to display it
-  var heatmap = new google.maps.visualization.HeatmapLayer({
-    data: pointArray,
-    radius: 50
-  });
-                   layer.setOptions({
+              var heatmap = document.getElementById('heatmap');
+              layer.setOptions({
                 heatmap: {
                   enabled: heatmap.checked
                 }
-              });           
-                
+              });
+        });
+        
         
         function updateMap(layer, tableId, locationColumn) {
         var heatmap = document.getElementById('heatmap').value;
