@@ -54,7 +54,6 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
                 heatmap: {
                   enabled: heatmap.checked
                 }
-                radius:{50}
               });
         });
         
