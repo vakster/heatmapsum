@@ -43,6 +43,12 @@ function initialize() {
         legendOpenButton.style.display = 'block';
       }
     }
+    
+    google.maps.event.addDomListener(document.getElementById('delivery'),
+            'change', function() {
+              updateMap(layer, tableId, locationColumn);
+        });
+        
     // Update the query sent to the Fusion Table Layer based on
       // the user selection in the select menu
       function updateMap(layer, tableId, locationColumn) {
@@ -62,9 +68,7 @@ function initialize() {
               from: tableId
             }
           });
+    }
   }
-      }
 }
-      
-
   google.maps.event.addDomListener(window, 'load', initialize);
