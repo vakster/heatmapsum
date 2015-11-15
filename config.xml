@@ -29,7 +29,7 @@ Gregory Vaks
   <preference name="BackgroundColor" value="0x00000000 "/>
   <preference name="KeepRunning" value="true"/>
   
-  <icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
+  <icon src="http://imgur.com/ThzJVyu" gap:platform="ios" width="57" height="57" />
   <icon src="http://imgur.com/bpBQCIF" gap:platform="ios" width="72" height="72" />
   <icon src="res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
   <icon src="res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
