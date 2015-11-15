@@ -21,7 +21,7 @@
       heatmap: { enabled: true },
       query: {
         select: "col4",
-        from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
+        from: "Address", <!--"1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",-->
         where: ""
       },
       options: {
