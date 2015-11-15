@@ -29,9 +29,9 @@ function initialize() {
       },
       
       styles: [
-       { where: "col4 == col4",
+       { where: "col1 == col2",
          markerOptions: {
-            iconName: 'large_green'
+            iconName: 'small_purple'
          }
        }
             ],
