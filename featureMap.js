@@ -60,7 +60,7 @@ function initialize() {
        },
      { where: "col5 > 60000 ",
          markerOptions: {
-            iconName: 'small_DarkRed'
+            iconName: 'small_darkred'
          }
        }
             ],
