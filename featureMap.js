@@ -57,6 +57,25 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
               });
         });
         
+        
+        function updateMap(layer, tableId, locationColumn) {
+        var delivery = document.getElementById('delivery').value;
+        if (delivery) {
+          layer.setOptions({
+            query: {
+              select: locationColumn,
+              from: tableId,
+              where: "delivery = '" + delivery + "'"
+            }
+          });
+        } else {
+          layer.setOptions({
+            query: {
+              select: locationColumn,
+              from: tableId
+            }
+          });
+        
 
 }
   google.maps.event.addDomListener(window, 'load', initialize);
