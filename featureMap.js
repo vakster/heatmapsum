@@ -28,13 +28,15 @@ function initialize() {
         where: ""
       },
       
+    //  <!-- column three is the zipcode -->/
+      
       styles: [
-       { where: "col3 > 30000",
+       { where: "col5 > 30000",
          markerOptions: {
             iconName: 'small_blue'
          }
        },
-       { where: "col3 < 30000",
+       { where: "col5 < 30000",
          markerOptions: {
             iconName: 'small_purple'
          }
