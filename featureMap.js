@@ -59,13 +59,13 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
         
         
         function updateMap(layer, tableId, locationColumn) {
-        var delivery = document.getElementById('delivery').value;
-        if (delivery) {
+        var heatmap = document.getElementById('heatmap').value;
+        if (heatmap) {
           layer.setOptions({
             query: {
-              select: locationColumn,
+              select: 'col3',
               from: tableId,
-              where: "delivery = '" + delivery + "'"
+              where: ""
             }
           });
         } else {
