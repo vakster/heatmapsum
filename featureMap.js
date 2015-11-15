@@ -34,7 +34,7 @@ function initialize() {
             iconName: 'large_green'
          }
        }
-            ]
+            ],
       
       
       options: {
