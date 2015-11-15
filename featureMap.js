@@ -42,11 +42,6 @@ function initialize() {
          markerOptions: {
             iconName: 'small_orange'
          }
-       },
-       { where: "col5 = col6",
-         markerOptions: {
-            iconName: 'small_purple'
-         }
        }
             ],
       
