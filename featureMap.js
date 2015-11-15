@@ -55,7 +55,7 @@ function initialize() {
        },
      { where: "col5 > 50000 AND col5 < 60000",
          markerOptions: {
-            iconName: 'small_orange'
+            iconName: 'small_yellow'
          }
        },
      { where: "col5 > 60000 ",
