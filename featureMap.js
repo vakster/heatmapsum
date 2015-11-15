@@ -39,7 +39,7 @@ function initialize() {
        },
        { where: "col6 < 30000",
          markerOptions: {
-            iconName: 'small_purple'
+            iconName: 'small_orange'
          }
        }
             ],
