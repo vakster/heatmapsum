@@ -35,7 +35,7 @@ function initialize() {
       styles: [
        { where: "col5 < 20000",
          markerOptions: {
-            iconName: 'small_gray'
+            iconName: 'small_purple'
          }
        },
      { where: "col5 > 20000 AND col5 < 30000",
