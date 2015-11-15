@@ -55,6 +55,13 @@ function initialize() {
               where: "delivery = '" + delivery + "'"
             }
           });
+        } else {
+          layer.setOptions({
+            query: {
+              select: locationColumn,
+              from: tableId
+            }
+          });
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
