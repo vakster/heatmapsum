@@ -43,23 +43,35 @@ The following site map was proposed and implemented. The site map was used as a 
 Home Page - including a logo, tagline, introduction, and chart modules.
 <img src="">
 
-Phases & Timimg
-<li>Phase 1 (2 hours)</li>
+Phases & Timimg (36 hours total)
+<li>Phase 1: Research (2 hours).
 <ul>Brainstorm Ideas</ul>
 <ul>Kick off meeting to confirm objectives, project scope, communication protocols, and milestones & issues</ul>
 <ul>Research competition</ul>
-<li>Phase 2 (5 hours)</li>
+</li>
+<li>Phase 2: Planning (5 hours)
 <ul>Decide on and register domain name</ul>
 <ul>Design of site theme, look & feel, Fonts</ul>
 <ul>Create site map and site layout</ul>
-<ul></ul>
-<li></li>
-
-<li></li>
-
-A heatmap to show current tuition costs for colleges across America and to project future costs for each concurrent year. 
-Three tabs:
-1. In-State Tuition
-2. Out-of-State Tuition
-3. Total Tuition
- 
+</li>
+<li>Phase 3: Creation (16 hours)
+<ul>Create modules</ul>
+<ul>Create quadratic progression algorithm</ul>
+<ul>Create datasets</ul>
+</li>
+<li>Phase 4: Integration (4 hours)
+<ul>Implement data sets in charts</ul>
+<ul>Manipulate data sets</ul>
+<ul>Integrate modules with data sets</ul>
+<li>Phase 5: Testing (10 hours)</li>
+<ul>Integration testing</ul>
+<ul>Unit testing</ul>
+<ul><li>System testing:
+<ul>White-hat</ul>
+<ul>Black-hat</ul>
+</li></ul>
+</li>
+<li>Phase 6: Submission (1 hour)
+<ul>Upload video/photos of working project</ul>
+<ul>Upload Github repository URL</ul>
+</li>
