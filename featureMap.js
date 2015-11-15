@@ -3,6 +3,7 @@ function initialize() {
             
     var tableId = '1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q';
     var locationColumn = 'col4';
+    var costMax = document.getElementById('costMax').value;
     
     google.maps.visualRefresh = true;
     var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
@@ -23,7 +24,7 @@ function initialize() {
       map: map,
       heatmap: { enabled: false },
       query: {
-        select: "col4, col5",
+        select: "col4",
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
         where: ""
       },
@@ -33,14 +34,14 @@ function initialize() {
     //column 6 is out of state 
       
       styles: [
-       { where: "col5 - col6 = 0",
-         markerOptions: {
-            iconName: 'small_blue'
-         }
-       },
-     { where: "col5 - col6 <> 0",
+       { where: "col5 > costMax",
          markerOptions: {
             iconName: 'small_red'
+         }
+       },
+     { where: "col5 < costMax",
+         markerOptions: {
+            iconName: 'small_blue'
          }
        }
             ],
