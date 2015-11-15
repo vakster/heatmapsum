@@ -3,8 +3,7 @@ function initialize() {
             
     var tableId = '1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q';
     var locationColumn = 'col4';
-    var costMax = document.getElementById('costMax');
-    
+
     google.maps.visualRefresh = true;
     var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
       (navigator.userAgent.match(/(iPod|iPhone|iPad|BlackBerry|Windows Phone|iemobile)/));
@@ -34,12 +33,12 @@ function initialize() {
     //column 6 is out of state 
       
       styles: [
-       { where: "col5 > costMax",
+       { where: "col5 < 20000",
          markerOptions: {
             iconName: 'small_red'
          }
        },
-     { where: "col5 < costMax",
+     { where: "col5 > 20000 AND col5 < 30000",
          markerOptions: {
             iconName: 'small_blue'
          }
