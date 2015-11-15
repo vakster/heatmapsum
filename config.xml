@@ -49,7 +49,7 @@ Gregory Vaks
   <gap:splash src="http://imgur.com/XiYe3FB" gap:platform="ios" width="960" height="640" />
   <gap:splash src="http://imgur.com/DA7eyam" gap:platform="ios" width="640" height="1136" />
   <gap:splash src="res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024 " />
-  <gap:splash src="res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768" />
+  <gap:splash src="http://imgur.com/l3iCJ0s" gap:platform="ios" width="1024" height="768" />
   <gap:splash src="http://imgur.com/NJaDcJe" gap:platform="ios" width="1536" height="2008" />
   <gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png" gap:platform="ios" width="2048" height="1496" />
   
