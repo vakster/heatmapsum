@@ -40,7 +40,7 @@ function initialize() {
        },
      { where: "col5 > 20000 AND col5 < 30000",
          markerOptions: {
-            iconName: 'small_LightBlue'
+            iconName: 'small_blue'
          }
        },
      { where: "col5 > 30000 AND col5 < 40000",
@@ -50,17 +50,17 @@ function initialize() {
        },
      { where: "col5 > 40000 AND col5 < 50000",
          markerOptions: {
-            iconName: 'small_red'
+            iconName: 'small_green'
          }
        },
      { where: "col5 > 50000 AND col5 < 60000",
          markerOptions: {
-            iconName: 'small_red'
+            iconName: 'small_orange'
          }
        },
      { where: "col5 > 70000 ",
          markerOptions: {
-            iconName: 'small_red'
+            iconName: 'small_DarkRed'
          }
        }
             ],
