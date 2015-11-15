@@ -58,7 +58,7 @@ function initialize() {
             iconName: 'small_orange'
          }
        },
-     { where: "col5 > 70000 ",
+     { where: "col5 > 60000 ",
          markerOptions: {
             iconName: 'small_DarkRed'
          }
