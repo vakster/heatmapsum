@@ -4,7 +4,7 @@ input[type=checkbox] {
 }
 
 /* SLIDE THREE */
-#map-canvas {
+#map-canvas, #in-out-state {
 	width: 80px;
 	height: 26px;
 	background: #333;
@@ -20,7 +20,7 @@ input[type=checkbox] {
 	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
 }
 
-#map-canvas:after {
+#map-canvas, #in-out-state:after {
 	content: 'OFF';
 	font: 12px/26px Arial, sans-serif;
 	color: #000;
@@ -31,7 +31,7 @@ input[type=checkbox] {
 	text-shadow: 1px 1px 0px rgba(255,255,255,.15);
 }
 
-#map-canvas:before {
+#map-canvas, #in-out-state:before {
 	content: 'ON';
 	font: 12px/26px Arial, sans-serif;
 	color: #00bf00;
@@ -41,7 +41,7 @@ input[type=checkbox] {
 	font-weight: bold;
 }
 
-#map-canvas label {
+#map-canvas, #in-out-state label {
 	display: block;
 	width: 34px;
 	height: 20px;
@@ -74,7 +74,7 @@ input[type=checkbox] {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
 }
 
-#map-canvas input[type=checkbox]:checked + label {
+#map-canvas, #in-out-state input[type=checkbox]:checked + label {
 	left: 43px;
 }
 body {
