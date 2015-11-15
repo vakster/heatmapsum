@@ -23,10 +23,7 @@ function initialize() {
       query: {
         select: "col4",
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
-        where: "",
-        radius: 50,
-        dissipate: false,
-        maxIntensity: 8
+        where: ""
       },
       options: {
         styleId: 3,
@@ -68,7 +65,10 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
             query: {
               select: locationColumn,
               from: tableId,
-              where: ""
+              where: "",
+        radius: 50,
+        dissipate: false,
+        maxIntensity: 8
             }
           });
         } else {
