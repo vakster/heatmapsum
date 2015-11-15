@@ -66,7 +66,7 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
               select: locationColumn,
               from: tableId,
               where: "",
-        radius: 50,
+        radius: 500,
         dissipate: false,
         maxIntensity: 8
             }
