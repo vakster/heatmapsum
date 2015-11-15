@@ -18,59 +18,16 @@
             <!--GOOGLE MAP IMPLEMENTATION -->
             <script src="featureMap.js"></script>
              <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js'> </script>
-            <!--<script type="text/javascript">
-  function initialize() {
-    google.maps.visualRefresh = true;
-    var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
-      (navigator.userAgent.match(/(iPod|iPhone|iPad|BlackBerry|Windows Phone|iemobile)/));
-    if (isMobile) {
-      var viewport = document.querySelector("meta[name=viewport]");
-      viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
-    }
-    var mapDiv = document.getElementById('googft-mapCanvas');
-    mapDiv.style.width = isMobile ? '100%' : '500px';
-    mapDiv.style.height = isMobile ? '100%' : '300px';
-    var map = new google.maps.Map(mapDiv, {
-      center: new google.maps.LatLng(46.768862265500054, -112.58358379999999),
-      zoom: 3,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
+           <script type="text/javascript">
+ var button = document.getElementById('toggle'),
+    text = document.getElementById('text');
 
-    layer = new google.maps.FusionTablesLayer({
-      map: map,
-      heatmap: { enabled: true },
-      query: {
-        select: "col4",
-        from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
-        where: ""
-      },
-      options: {
-        styleId: 3,
-        templateId: 4
-      }
-    });
-
-    if (isMobile) {
-      var legend = document.getElementById('googft-legend');
-      var legendOpenButton = document.getElementById('googft-legend-open');
-      var legendCloseButton = document.getElementById('googft-legend-close');
-      legend.style.display = 'none';
-      legendOpenButton.style.display = 'block';
-      legendCloseButton.style.display = 'block';
-      legendOpenButton.onclick = function() {
-        legend.style.display = 'block';
-        legendOpenButton.style.display = 'none';
-      }
-      legendCloseButton.onclick = function() {
-        legend.style.display = 'none';
-        legendOpenButton.style.display = 'block';
-      }
-    }
-  }
-
-  google.maps.event.addDomListener(window, 'load', initialize);
+button.onclick = function() {
+  var isHidden = text.style.display == 'none';
+  text.style.display = isHidden ? 'block' : 'none';
+};
   </script>
-  -->
+ 
         </head>
         
         <body>
@@ -110,7 +67,7 @@
                 <section id="tab1" class="tab-content active">
                     <div id="map-canvas">
                       
-    <input id="heatmap" value="true" type="checkbox" /><a href="#map2"></a>
+    <input id="heatmap" value="true" type="checkbox" />
     <label for="heatmap"></label>
 </div>
 <div id="in-out-state">
@@ -118,9 +75,11 @@
     <input id="in-out" value="column5" type="checkbox" />
     <label for="in-out"></label>
 </div>
-                <div id="map2">
+                <div class="show" >
                     <div id="googft-mapCanvas"></div></div>
-                    <div id="wrap">
+                    <div class="hidden"> content 
+                    <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col4%2C+col5+from+1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=36.065556672427356&amp;lng=-88.14999004999999&amp;t=1&amp;z=4&amp;l=col4&amp;y=3&amp;tmplt=4&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.59&amp;hmr=37&amp;hmw=5&amp;hml=ONE_COL_LAT_LNG"></iframe></div>
+                  </div>  <div id="wrap">
                         <!-- <label>
                             <input id="rdb1" type="radio" name="toggler" value="1"/>In-State</label>
                         <label>
