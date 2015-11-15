@@ -63,7 +63,7 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
         if (heatmap) {
           layer.setOptions({
             query: {
-              select: 'col3',
+              select: 'col4',
               from: tableId,
               where: ""
             }
