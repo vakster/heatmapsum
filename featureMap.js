@@ -47,9 +47,14 @@ function initialize() {
       }
     }
     
-    google.maps.event.addDomListener(document.getElementById('delivery'),
-            'change', function() {
-              updateMap(layer, tableId, locationColumn);
+google.maps.event.addDomListener(document.getElementById('heatmap'),
+            'click', function() {
+              var heatmap = document.getElementById('heatmap');
+              layer.setOptions({
+                heatmap: {
+                  enabled: heatmap.checked
+                }
+              });
         });
         
     // Update the query sent to the Fusion Table Layer based on
