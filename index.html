@@ -17,6 +17,7 @@
             <script src="tabHide.js"></script>
             <!--GOOGLE MAP IMPLEMENTATION -->
             <script src="featureMap.js"></script>
+             <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js'> </script>
             <!--<script type="text/javascript">
   function initialize() {
     google.maps.visualRefresh = true;
@@ -132,7 +133,10 @@
                     <script src="resizeImage.js"></script>
                 </section>
                 <section id="tab3" class="tab-content hide">
-                    <div>Content in tab 3</div>
+                    <div id="wrap">
+                        <h2> Highest In-State-Tuition in tens of thousands </h2> 
+                        <canvas id="myChart" width="500" height="500" style="width: 500px; height: 500px;"> test </canvas>    
+                    </div>
                 </section>
                 <br />
                 <div id="main"></div>
@@ -143,6 +147,54 @@
                         <p class="muted credit">Gregory Vaks, Matthew Newman, Joseph Stack, Daniel Saganome, Patrick Monaghan</p>
                     </div>
                 </div>
+                <script> 
+ 
+          $(document).ready(function()
+          {
+              // Call the greetingPost function
+              getData();
+ 
+            
+ 
+          // The function that makes the request to our PHP script
+          function getData()
+          {
+            // Ajax call
+            $.ajax({
+              type: "POST",
+              url: "test2.php",
+              dataType: "json",
+              data: $('#stuff').serialize(),
+              success: response
+            });
+          }
+ 
+          // This function runs once we get our data from PHP
+          function response(json)
+          {
+             // Get context with jQuery - using jQuery's .get() method.
+            var ctx = $("#myChart").get(0).getContext("2d");
+            var myNewChart = new Chart(ctx);
+            var data = {
+                labels: json[0],
+                datasets: [
+                    {
+                        label: "My First dataset",
+                        fillColor: "rgba(220,220,220,0.5)",
+                        strokeColor: "rgba(220,220,220,0.8)",
+                        highlightFill: "rgba(220,220,220,0.75)",
+                        highlightStroke: "rgba(220,220,220,1)",
+                        data: json[1]
+                    }
+                ]
+            };
+
+            var myBarChart = new Chart(ctx).Bar(data);
+          }
+          });
+
+        
+</script>
         </body>
     
     </html>
