@@ -33,14 +33,15 @@ function initialize() {
     //column 6 is out of state 
       
       styles: [
-       { where: "col6",
+       { where: "col5 = col6",
          markerOptions: {
-            iconName: 'small_blue'
+            iconName: 'small_orange'
          }
        },
-       { where: "col5",
+       
+       { where: "col5 <> col6",
          markerOptions: {
-            iconName: 'small_rede'
+            iconName: 'small_blue'
          }
        }
             ],
