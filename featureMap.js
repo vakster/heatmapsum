@@ -21,8 +21,8 @@ function initialize() {
       map: map,
       heatmap: { enabled: false },
       radius: 16,
-        dissipate: false,
-        maxIntensity: 8,
+        dissipate: true,
+        maxIntensity: 18,
       query: {
         select: "col4",
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
