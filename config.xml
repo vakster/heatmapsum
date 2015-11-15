@@ -8,7 +8,7 @@
   <description>
 This is a heat map to show the rising costs of tuition per year by region, state, and school.
 Enter the year below to see the expected tuition costs. </description>
-<author href="college-tuition--heat-map.azurewebsites.net"
+<author href="college-tuition-heat-map.azurewebsites.net"
 email="vaksg1@tcnj.edu">
 Gregory Vaks
 </author>
