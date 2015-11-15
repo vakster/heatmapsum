@@ -43,6 +43,18 @@ function initialize() {
         legendOpenButton.style.display = 'block';
       }
     }
+    // Update the query sent to the Fusion Table Layer based on
+      // the user selection in the select menu
+      function updateMap(layer, tableId, locationColumn) {
+        var delivery = document.getElementById('delivery').value;
+        if (delivery) {
+          layer.setOptions({
+            query: {
+              select: locationColumn,
+              from: tableId,
+              where: "delivery = '" + delivery + "'"
+            }
+          });
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
