@@ -21,7 +21,7 @@ float:left;
 }
 
 #in-out-state:after {
-	content: 'OFF';
+	content: 'OUT';
 	font: 12px/26px Arial, sans-serif;
 	color: #000;
 	position: absolute;
@@ -32,7 +32,7 @@ float:left;
 }
 
 #in-out-state:before {
-	content: 'ON';
+	content: 'IN';
 	font: 12px/26px Arial, sans-serif;
 	color: #00bf00;
 	position: absolute;
