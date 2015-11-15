@@ -54,7 +54,7 @@ Gregory Vaks
   <gap:splash src="http://imgur.com/2vmUqbt" gap:platform="ios" width="2048" height="1496" />
   
   <gap:splash src="http://imgur.com/iA5eBDEg" gap:platform="android" gap:density="ldpi" />
-  <gap:splash src="res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi" />
+  <gap:splash src="http://imgur.com/pyrD4fZ" gap:platform="android" gap:density="mdpi" />
   <gap:splash src="res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:density="hdpi" />
   <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
   <gap:splash src="http://imgur.com/cFx9FHc" gap:platform="android" gap:density="xxhdpi" />
