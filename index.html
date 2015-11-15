@@ -19,6 +19,9 @@
             <script src="featureMap.js"></script>-->
             
 <script type="text/javascript">
+
+    var map_type_var = document.getElementById('map_type').value;
+;
   function initialize() {
     google.maps.visualRefresh = true;
     var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
@@ -38,7 +41,7 @@
 
     layer = new google.maps.FusionTablesLayer({
       map: map,
-      heatmap: { enabled: false },
+      heatmap: { enabled: map_type },
       query: {
         select: "col4",
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
@@ -137,10 +140,10 @@
                     <p class="muted credit">Gregory Vaks, Matthew Newman, Joseph Stack, Daniel Saganome, Patrick Monaghan</p>
                 </div>
             </div>
-    <select id="delivery">
-      <option value="">--Select--</option>
-      <option value="2015">2015</option>
-      <option value="2014">2014</option>
+    <select id="Map_Type">
+      <option value =false>--Select--</option>
+      <option value=false>Featured</option>
+      <option value=true>Heat</option>
     </select>
 
             
