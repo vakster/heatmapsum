@@ -55,8 +55,8 @@ Gregory Vaks
   
   <gap:splash src="http://imgur.com/iA5eBDEg" gap:platform="android" gap:density="ldpi" />
   <gap:splash src="http://imgur.com/pyrD4fZ" gap:platform="android" gap:density="mdpi" />
-  <gap:splash src="res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:density="hdpi" />
-  <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+  <gap:splash src="http://imgur.com/8YJG92s" gap:platform="android" gap:density="hdpi" />
+  <gap:splash src="http://imgur.com/zvSfp5n" gap:platform="android" gap:density="xhdpi" />
   <gap:splash src="http://imgur.com/cFx9FHc" gap:platform="android" gap:density="xxhdpi" />
 
   <feature name="http://api.phonegap.com/1.0/camera"/>
