@@ -23,7 +23,7 @@ function initialize() {
       map: map,
       heatmap: { enabled: false },
       query: {
-        select: "col4",
+        select: "col4, col5",
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
         where: ""
       },
