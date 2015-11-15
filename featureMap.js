@@ -75,7 +75,8 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
               from: tableId
             }
           });
-        
+        }
+        }
 
 }
   google.maps.event.addDomListener(window, 'load', initialize);
