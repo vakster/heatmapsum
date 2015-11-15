@@ -8,7 +8,7 @@
       viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
     }
     var mapDiv = document.getElementById('googft-mapCanvas');
-    mapDiv.style.width = isMobile ? '100%' : '800px';
+    mapDiv.style.width = isMobile ? '100%' : '100%';
     mapDiv.style.height = isMobile ? '100%' : '600px';
     var map = new google.maps.Map(mapDiv, {
       center: new google.maps.LatLng(46.768862265500054, -112.58358379999999),
