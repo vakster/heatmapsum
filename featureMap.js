@@ -9,9 +9,9 @@
     }
     var mapDiv = document.getElementById('googft-mapCanvas');
     mapDiv.style.width = isMobile ? '100%' : '100%';
-    mapDiv.style.height = isMobile ? '100%' : '600px';
+    mapDiv.style.height = isMobile ? '100%' : '450px';
     var map = new google.maps.Map(mapDiv, {
-      center: new google.maps.LatLng(46.768862265500054, -112.58358379999999),
+      center: new google.maps.LatLng(38.4985464, -098.3834298),
       zoom: 3,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
