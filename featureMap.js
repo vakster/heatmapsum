@@ -47,7 +47,15 @@ function initialize() {
       }
     }
     
-
+google.maps.event.addDomListener(document.getElementById('heatmap'),
+            'click', function() {
+              var heatmap = document.getElementById('heatmap');
+              layer.setOptions({
+                heatmap: {
+                  enabled: heatmap.checked
+                }
+              });
+        });
         
 
 }
