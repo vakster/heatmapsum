@@ -33,6 +33,11 @@ function initialize() {
          markerOptions: {
             iconName: 'small_blue'
          }
+       },
+       { where: "col1 != col3",
+         markerOptions: {
+            iconName: 'small_red'
+         }
        }
             ],
       
