@@ -1,7 +1,5 @@
 h1 {
-    width: 100px;
-    height: 100px;
-    color: red;
+
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
     animation-name: example;
