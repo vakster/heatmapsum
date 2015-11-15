@@ -41,7 +41,7 @@ Your college choice is more than just a 4 year experience. it will shape the res
 <b>Site Map</b>
 The following site map was proposed and implemented. The site map was used as a basis for design.
 Home Page - including a logo, tagline, introduction, and chart modules.
-<img src="">
+<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://www.lucidchart.com/documents/embeddedchart/83110be2-6314-4449-b424-e89fd53cdd33" id="SmgtokVgjl2W"></iframe></div>
 
 Phases & Timimg (36 hours total)
 <li>Phase 1: Research (2 hours).
