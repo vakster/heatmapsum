@@ -35,12 +35,12 @@ function initialize() {
       styles: [
        { where: "col5 > col6",
          markerOptions: {
-            iconName: 'small_orange'
+            iconName: 'small_blue'
          }
        },
      { where: "col5 < col6",
          markerOptions: {
-            iconName: 'small_orange'
+            iconName: 'small_blue'
          }
        }
             ],
