@@ -45,7 +45,7 @@ function initialize() {
        },
      { where: "col5 > 30000 AND col5 < 40000",
          markerOptions: {
-            iconName: 'small_LightGreen'
+            iconName: 'small_red'
          }
        },
      { where: "col5 > 40000 AND col5 < 50000",
