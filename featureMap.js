@@ -31,7 +31,7 @@ function initialize() {
       styles: [
        { where: "col1 == col3",
          markerOptions: {
-            iconName: 'small_purple'
+            iconName: 'small_blue'
          }
        }
             ],
