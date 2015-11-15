@@ -29,12 +29,12 @@ function initialize() {
       },
       
       styles: [
-       { where: "col1 == col2",
+       { where: "col2 == col3",
          markerOptions: {
             iconName: 'small_blue'
          }
        },
-       { where: "col1 != col2",
+       { where: "col2 != col3",
          markerOptions: {
             iconName: 'small_red'
          }
