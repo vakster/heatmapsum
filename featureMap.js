@@ -29,12 +29,12 @@ function initialize() {
       },
       
       styles: [
-       { where: "col5 == col3",
+       { where: "col4 == col4",
          markerOptions: {
             iconName: 'large_green'
          }
        }
-]
+            ]
       
       
       options: {
