@@ -49,4 +49,3 @@ function initialize() {
               updateMap(layer, tableId, locationColumn);
         });
       }
-  google.maps.event.addDomListener(window, 'load', initialize);
