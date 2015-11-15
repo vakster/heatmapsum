@@ -25,7 +25,7 @@ function initialize() {
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
         where: "",
         radius: 50,
-        dissipate: true,
+        dissipate: false,
         maxIntensity: 8
       },
       options: {
