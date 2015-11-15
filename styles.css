@@ -1,49 +1,301 @@
 
 body {
+
     background-color: black;
+
 }
+
 h1 {
-		font-size: 72px;
-       
-        color: #ddd;
-         }
-     
-   
-h3 {
-	color:orange;
-	font-size: 48px;
+
+    font-size: 48px;
+
+    color: #ddd;
+
 }
+
+h2 {
+	float:left;
+    font-size: 24px;
+
+}
+
 p {
-	color:white;
-	font-size: 24px;
+
+    color:#ddd;
+
+    font-size: 14px;
+
 }
 
 #section {
-	float: center;
-	text-align:center;
-	padding: 10px;
+
+    float: center;
+
+    text-align:center;
+
+    padding: 10px;
+
 }
 
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #444;
-  text-align: center;
+#footer {
+
+    float: center;
+
+    text-align:left;
+
 }
+
+#footer p {
+
+    font-size:10px;
+
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+
+@media (max-width: 767px) {
+
+    #footer {
+
+        margin-left: -20px;
+
+        margin-right: -20px;
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+
+    }
+
+}
+
+#container {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 150px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear:both;} 
 #nav {
-	
+
 }
+
 input {
-  width: 375px;
-  height: 25px;
+
+    width: 375px;
+
+    height: 25px;
+
 }
 
 .burn {
 
-	color:#A41623;
+    color:#A41623;
+
 }
+
+.burn:hover {
+
+-webkit-animation-delay: 3.7s;
+-moz-animation-delay: 3.7s;
+animation-delay: 3.7s;
+    color: red;
+
+}
+
+.learn {
+
+-webkit-animation-delay: 3.7s;
+-moz-animation-delay: 3.7s;
+animation-delay: 3.7s;
+    color:#cec62b;
+
+}
+
+.learn:hover {
+
+    color: yellow;
+
+}
+
 .title {
-	color:;
+
+    color:;
+
 }
+
+/** Start: to style navigation tab **/
+
+.nav {
+
+    margin-bottom: 18px;
+
+    margin-left: 0;
+
+    list-style: none;
+
+}
+
+.nav > li > a {
+
+    display: block;
+
+}
+
+.nav-tabs {
+
+    *zoom: 1;
+
+}
+
+.nav-tabs:before, .nav-tabs:after {
+
+    display: table;
+
+    content:"";
+
+}
+
+.nav-tabs:after {
+
+    clear: both;
+
+}
+
+.nav-tabs > li {
+
+    float: left;
+
+}
+
+.nav-tabs > li > a {
+
+    padding-right: 12px;
+
+    padding-left: 12px;
+
+    margin-right: 2px;
+
+    line-height: 14px;
+
+}
+
+.nav-tabs {
+
+    border-bottom: 1px solid #ddd;
+    margin-right:40px;
+
+}
+
+.nav-tabs > li {
+
+    margin-bottom: -1px;
+
+}
+
+.nav-tabs > li > a {
+
+    padding-top: 8px;
+
+    padding-bottom: 8px;
+
+    line-height: 18px;
+
+    border: 1px solid transparent;
+
+    -webkit-border-radius: 4px 4px 0 0;
+
+    -moz-border-radius: 4px 4px 0 0;
+
+    border-radius: 4px 4px 0 0;
+
+}
+
+.nav-tabs > li > a:hover {
+
+    border-color: #eeeeee #eeeeee #dddddd;
+
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+
+    color: #ddd;
+
+    cursor: default;
+
+    background-color: #fff;
+
+    border: 5px solid #E8DE2A;
+
+    border-bottom-color: transparent;
+
+}
+
+li {
+
+    line-height: 18px;
+
+}
+
+.tab-content.active {
+    width:90%;
+    display: block;
+
+}
+
+.tab-content.hide {
+
+    display: none;
+
+}
+
+#wrap {
+   width: auto;
+   height: auto;
+}
+
+#wrap img {
+   width: 100%;
+}
+a {
+    color: #E8DE2A;
+}
+
+a:focus, a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+/** End: to style navigation tab **/
+
+/* make keyframes that tell the start state and the end state of our object */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+	float:left;
+-webkit-animation-delay: 1.7s;
+-moz-animation-delay: 1.7s;
+animation-delay: 1.7s;
+}
+
+
