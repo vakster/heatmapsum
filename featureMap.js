@@ -29,14 +29,14 @@ function initialize() {
       },
       
       styles: [
-       { where: "col1 = col3",
+       { where: "col1 > 30000",
          markerOptions: {
             iconName: 'small_blue'
          }
        },
-       { where: "col1 <> col3",
+       { where: "col1 < 30000",
          markerOptions: {
-            iconName: 'small_red'
+            iconName: 'small_purple'
          }
        }
             ],
