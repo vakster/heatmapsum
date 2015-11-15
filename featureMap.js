@@ -29,12 +29,12 @@ function initialize() {
       },
       
       styles: [
-       { where: "col2 > 30000",
+       { where: "col3 > 30000",
          markerOptions: {
             iconName: 'small_blue'
          }
        },
-       { where: "col2 < 30000",
+       { where: "col3 < 30000",
          markerOptions: {
             iconName: 'small_purple'
          }
