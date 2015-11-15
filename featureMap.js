@@ -34,7 +34,7 @@ function initialize() {
             iconName: 'small_blue'
          }
        },
-       { where: "col1 != col5",
+       { where: "col1 < 100",
          markerOptions: {
             iconName: 'small_red'
          }
