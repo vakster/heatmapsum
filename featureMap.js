@@ -1,4 +1,7 @@
 function initialize() {
+    var tableId = '1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q';
+    var locationColumn = 'col4';
+    
     google.maps.visualRefresh = true;
     var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
       (navigator.userAgent.match(/(iPod|iPhone|iPad|BlackBerry|Windows Phone|iemobile)/));
@@ -16,7 +19,7 @@ function initialize() {
     });
     layer = new google.maps.FusionTablesLayer({
       map: map,
-      heatmap: { enabled: true },
+      heatmap: { enabled: false },
       query: {
         select: "col4",
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
