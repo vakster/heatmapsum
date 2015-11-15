@@ -1,5 +1,8 @@
 function initialize() {
      google.load('visualization', '1');
+     var gvizQuery = new google.visualization.Query(
+            'http://www.google.com/fusiontables/gvizdata?tq=' + query);
+            
     var tableId = '1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q';
     var locationColumn = 'col4';
     
