@@ -9,7 +9,7 @@ input[type=checkbox] {
 	height: 26px;
 	background: #333;
 	margin: 20px auto;
-
+float:left;
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
 	border-radius: 50px;
