@@ -35,7 +35,7 @@ function initialize() {
       styles: [
        { where: "col5 < 20000",
          markerOptions: {
-            iconName: 'small_Lavender'
+            iconName: 'small_gray'
          }
        },
      { where: "col5 > 20000 AND col5 < 30000",
@@ -50,17 +50,17 @@ function initialize() {
        },
      { where: "col5 > 40000 AND col5 < 50000",
          markerOptions: {
-            iconName: 'small_LightSeaGreen'
+            iconName: 'small_red'
          }
        },
      { where: "col5 > 50000 AND col5 < 60000",
          markerOptions: {
-            iconName: 'small_LightSlateGray'
+            iconName: 'small_red'
          }
        },
      { where: "col5 > 70000 ",
          markerOptions: {
-            iconName: 'MidnightBlue'
+            iconName: 'small_red'
          }
        }
             ],
