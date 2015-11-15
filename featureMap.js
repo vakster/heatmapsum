@@ -1,5 +1,4 @@
-
-  function initialize() {
+function initialize() {
     google.maps.visualRefresh = true;
     var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
       (navigator.userAgent.match(/(iPod|iPhone|iPad|BlackBerry|Windows Phone|iemobile)/));
@@ -8,20 +7,19 @@
       viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
     }
     var mapDiv = document.getElementById('googft-mapCanvas');
-    mapDiv.style.width = isMobile ? '100%' : '100%';
-    mapDiv.style.height = isMobile ? '100%' : '450px';
+    mapDiv.style.width = isMobile ? '100%' : '500px';
+    mapDiv.style.height = isMobile ? '100%' : '300px';
     var map = new google.maps.Map(mapDiv, {
-      center: new google.maps.LatLng(38.4985464, -098.3834298),
+      center: new google.maps.LatLng(46.768862265500054, -112.58358379999999),
       zoom: 3,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-
     layer = new google.maps.FusionTablesLayer({
       map: map,
       heatmap: { enabled: true },
       query: {
         select: "col4",
-        from: "Address", <!--"1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",-->
+        from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
         where: ""
       },
       options: {
@@ -29,7 +27,6 @@
         templateId: 4
       }
     });
-
     if (isMobile) {
       var legend = document.getElementById('googft-legend');
       var legendOpenButton = document.getElementById('googft-legend-open');
@@ -47,5 +44,4 @@
       }
     }
   }
-
   google.maps.event.addDomListener(window, 'load', initialize);
