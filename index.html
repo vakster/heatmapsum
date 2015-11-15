@@ -17,17 +17,11 @@
             <script src="tabHide.js"></script>
             <!--GOOGLE MAP IMPLEMENTATION -->
             <script src="featureMap.js"></script>
-             <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js'> </script>
-           <script type="text/javascript">
- var button = document.getElementById('toggle'),
-    text = document.getElementById('text');
-
-button.onclick = function() {
-  var isHidden = text.style.display == 'none';
-  text.style.display = isHidden ? 'block' : 'none';
-};
-  </script>
- 
+              <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- bootstrap -->
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js'> </script>
         </head>
         
         <body>
@@ -35,64 +29,36 @@ button.onclick = function() {
                 <div class="row">
                     <div class="col-sm-12 col-md-5">
                         <div class="box fade-in one">
-                             <h1>< Tuition Hack /></h1>
+                             <h1> < Tuition Hack /></h1>
 
                         </div>
                          <h2>Feel the  <span class="burn">Burn</span> before you  <span class="learn">Learn</span></h2>
 
                     </div>
-                    <div class="col-sm-12 col-md-7">
-                        <br />
-                        <br />
-                        <p>This is a heatmap to show the rising costs of tuition per year by region, state, and school. Enter the year below to see the expected tuition costs.</p>
-                        <form>
-                            <input type="text" value="30000" id="costMax" placeholder="Please enter a cost.">
-                        </form>
-                    </div>
+
                 </div>
                 <br />
                 <div class="row">
                     <ul class="nav nav-tabs">
-                        <li class="active">	<a href="#tab1">Map</a>
+                        <li class="active">	<a href="#tab1"> Maps </a>
 
                         </li>
-                        <li>	<a href="#tab2">Whatever</a>
+                        <li>	<a href="#tab2"> More Data </a>
 
                         </li>
-                        <li>	<a href="#tab3">Charts</a>
+                        <li>	<a href="#tab3" class='stuff'> Data Visualization </a>
 
                         </li>
                     </ul>
                 </div>
                 <section id="tab1" class="tab-content active">
-                    <div id="map-canvas">
-                      
-    <input id="heatmap" value="true" type="checkbox" />
-    <label for="heatmap"></label>
-</div><div id="colorcoded">
-<font color="purple"><20,000 &nbsp;&nbsp;&nbsp; </font>
-<font color="blue">20,000-30,000&nbsp;&nbsp;&nbsp;   </font>
-<font color="red">30,000-40,000 &nbsp;&nbsp;&nbsp;  </font>
-<font color="green">40,000-50,000&nbsp;&nbsp;&nbsp;</font>
-<font color="yellow">50,000-60,000  &nbsp;&nbsp;&nbsp; </font>
-<font color="darkred">>60,000</font>
-</div>
-                
+                  <p> Toggle on and off the heatmap by utilizing the switch. </p>
+                <div id="map-canvas">
+
+                  <input id="heatmap" value="true" type="checkbox" />  <label for="heatmap"> </label>
+                </div>
                     <div id="googft-mapCanvas"></div>
-                   
-                   
-                        <!-- <label>
-                            <input id="rdb1" type="radio" name="toggler" value="1"/>In-State</label>
-                        <label>
-                            <input id="rdb2" type="radio" name="toggler" value="2" />Out-of-State</label>
-                        <div id="blk-1" class="toHide" style="display:none">
-                            <div id="googft-mapCanvas"></div>
-                        </div>
-                        <div id="blk-2" class="toHide" style="display:none">
-                            <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col4+from+1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q&amp;viz=MAP&amp;h=false&amp;lat=46.768862265500054&amp;lng=-112.58358379999999&amp;t=1&amp;z=3&amp;l=col4&amp;y=3&amp;tmplt=4&amp;hml=ONE_COL_LAT_LNG"></iframe>
-                        </div>
-                    </div>
-                    <script src="resizeImage.js"></script>-->
+                    <div id="wrap">
                 </section>
                 <section id="tab2" class="tab-content hide">
                     <div id="wrap"></div>
@@ -100,8 +66,9 @@ button.onclick = function() {
                 </section>
                 <section id="tab3" class="tab-content hide">
                     <div id="wrap">
-                        <h2> Highest In-State-Tuition in tens of thousands </h2> 
-                        <canvas id="myChart" width="500" height="500" style="width: 500px; height: 500px;"> test </canvas>    
+                        <h2> Highest In-State Tuition in Tens of Thousands of Dollars</h2> 
+                        <canvas id="myChart" width="500" height="500" style="width: 500px; height: 500px;">  </canvas>    
+                        <canvas id="myChart2" width="500" height="500" style="width: 500px; height: 500px;">  </canvas>    
                     </div>
                 </section>
                 <br />
@@ -109,18 +76,14 @@ button.onclick = function() {
                 </div>
                 <div id="footer">
                     <div class="container">
-                        <p class="muted credit">Copyright &copy; 2015 Hack Princeton</p>
+                        <p class="muted credit">Copyright &copy; 2015 < Tuition Hack /> Hack Princeton</p>
                         <p class="muted credit">Gregory Vaks, Matthew Newman, Joseph Stack, Daniel Saganome, Patrick Monaghan</p>
                     </div>
                 </div>
                 <script> 
- 
-          $(document).ready(function()
-          {
-              // Call the greetingPost function
-              getData();
- 
-            
+ $('.stuff').click(function() {
+                 // Call the getData function
+              getData();            
  
           // The function that makes the request to our PHP script
           function getData()
@@ -156,9 +119,29 @@ button.onclick = function() {
             };
 
             var myBarChart = new Chart(ctx).Bar(data);
+
+
+             // Get context with jQuery - using jQuery's .get() method.
+            var ctx2 = $("#myChart2").get(0).getContext("2d");
+            var myNewChart2 = new Chart(ctx);
+            var data2 = {
+                labels: json[0],
+                datasets: [
+                    {
+                        label: "My First dataset",
+                        fillColor: "rgba(220,220,220,0.5)",
+                        strokeColor: "rgba(220,220,220,0.8)",
+                        highlightFill: "rgba(220,220,220,0.75)",
+                        highlightStroke: "rgba(220,220,220,1)",
+                        data: json[1]
+                    }
+                ]
+            };
+
+            var myBarChart = new Chart(ctx).Bar(data);
+
           }
           });
-
         
 </script>
         </body>

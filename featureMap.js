@@ -1,9 +1,7 @@
 function initialize() {
-
-            
     var tableId = '1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q';
     var locationColumn = 'col4';
-
+    
     google.maps.visualRefresh = true;
     var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
       (navigator.userAgent.match(/(iPod|iPhone|iPad|BlackBerry|Windows Phone|iemobile)/));
@@ -12,7 +10,7 @@ function initialize() {
       viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
     }
     var mapDiv = document.getElementById('googft-mapCanvas');
-    mapDiv.style.width = isMobile ? '100%' : '1100px';
+    mapDiv.style.width = isMobile ? '100%' : '800px';
     mapDiv.style.height = isMobile ? '100%' : '500px';
     var map = new google.maps.Map(mapDiv, {
       center: new google.maps.LatLng(46.768862265500054, -112.58358379999999),
@@ -27,45 +25,6 @@ function initialize() {
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
         where: ""
       },
-      
-    //  <!-- column three is the zipcode -->/
-    // column 5 ia in state
-    //column 6 is out of state 
-      
-      styles: [
-       { where: "col5 < 20000",
-         markerOptions: {
-            iconName: 'small_purple'
-         }
-       },
-     { where: "col5 > 20000 AND col5 < 30000",
-         markerOptions: {
-            iconName: 'small_blue'
-         }
-       },
-     { where: "col5 > 30000 AND col5 < 40000",
-         markerOptions: {
-            iconName: 'small_red'
-         }
-       },
-     { where: "col5 > 40000 AND col5 < 50000",
-         markerOptions: {
-            iconName: 'small_green'
-         }
-       },
-     { where: "col5 > 50000 AND col5 < 60000",
-         markerOptions: {
-            iconName: 'small_yellow'
-         }
-       },
-     { where: "col5 > 60000 ",
-         markerOptions: {
-            iconName: 'small_darkred'
-         }
-       }
-            ],
-      
-      
       options: {
         styleId: 3,
         templateId: 4

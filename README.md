@@ -43,24 +43,6 @@ The following site map was proposed and implemented. The site map was used as a 
 Home Page - including a logo, tagline, introduction, and chart modules.
 <img src="http://i.imgur.com/zpYuleI.png" width="100%" height="100%"/>
 
-<b>Algorithm:</b>
-The quadratic regression formula:
-<img src="http://smackaay.com/wp-content/uploads/2009/04/formula1.png">
-
-The formula projects future data points by using the previous data sets, A,B,C. 
-Our logic for the formula:
-<br \>
-a = (( Σ x2y * Σ xx ) - (Σ xy * Σ xx2 )) / (( Σ xx * Σ x2x2) - (Σ xx2 * Σ xx2))<br \>
-b = (( Σ xy * Σ x2x2 ) - (Σ x2y * Σ xx2 )) / (( Σ xx * Σ x2x2) - (Σ xx2 * Σ xx2 ))<br \>
-c = ( Σ y / $numValues ) - ( b * ( Σ x / $numValues )) - ( a * ( Σ x2 / $numValues ))<br \>
-where:<br \>
-Σ xx = ((Σx^2) - (($Σx)^2 / n))<br \>
-Σ xy = ((Σxy) - ((Σx* $Σy) / n))<br \>
-Σ xx2 = ((Σx^3) - ((Σx^2* Σx) / n))<br \>
-Σ x2y = ((Σx^2y) - ((Σx^2* Σy) / n))<br \>
-Σ x2x2 = ((Σx^4) - ((Σx^2)^2 / n)))
-
-<br \>
 Phases & Timimg (36 hours total)
 <li>Phase 1: Research (2 hours).
 <ul>Brainstorm Ideas</ul>
