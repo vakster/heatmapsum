@@ -1,5 +1,5 @@
 h1 {
-
+	color:#ddd;
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 8s; /* Chrome, Safari, Opera */
     animation-name: example;
