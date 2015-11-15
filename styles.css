@@ -1,8 +1,4 @@
-google.maps.visualization.HeatmapLayerOptions {
-	radius: 56,
-        dissipate: false,
-        maxIntensity: 8,
-}
+
 h1 {
 	color:#ddd;
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
