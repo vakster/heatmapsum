@@ -23,13 +23,11 @@ function initialize() {
       query: {
         select: "col4",
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
-        where: "",
-         maxIntensity: 80
+        where: ""
       },
       options: {
         styleId: 3,
-        templateId: 4,
-         maxIntensity: 80
+        templateId: 4
       }
     });
     if (isMobile) {
@@ -54,8 +52,7 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
               var heatmap = document.getElementById('heatmap');
               layer.setOptions({
                 heatmap: {
-                  enabled: heatmap.checked,
-                   maxIntensity: 80
+                  enabled: heatmap.checked
                 }
               });
         });
@@ -68,17 +65,14 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
             query: {
               select: locationColumn,
               from: tableId,
-              where: "",
-        radius: 500,
-        dissipate: false,
-        maxIntensity: 80
+              where: ""
             }
           });
         } else {
           layer.setOptions({
             query: {
               select: 'col1',
-              from: tableId, maxIntensity: 80
+              from: tableId
             }
           });
         }
