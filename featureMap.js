@@ -36,7 +36,7 @@ function initialize() {
        },
        { where: "col1 != col5",
          markerOptions: {
-            iconName: 'small_purple'
+            iconName: 'small_red'
          }
        }
             ],
