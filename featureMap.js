@@ -3,7 +3,7 @@ function initialize() {
             
     var tableId = '1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q';
     var locationColumn = 'col4';
-    var costMax = document.getElementById('costMax').value;
+    var costMax = document.getElementById('costMax');
     
     google.maps.visualRefresh = true;
     var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
