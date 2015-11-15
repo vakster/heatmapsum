@@ -35,32 +35,32 @@ function initialize() {
       styles: [
        { where: "col5 < 20000",
          markerOptions: {
-            iconName: 'small_purple'
+            iconName: 'small_Lavender'
          }
        },
      { where: "col5 > 20000 AND col5 < 30000",
          markerOptions: {
-            iconName: 'small_blue'
+            iconName: 'small_LightBlue'
          }
        },
      { where: "col5 > 30000 AND col5 < 40000",
          markerOptions: {
-            iconName: 'small_orange'
+            iconName: 'small_LightGreen'
          }
        },
      { where: "col5 > 40000 AND col5 < 50000",
          markerOptions: {
-            iconName: 'small_yellow'
+            iconName: 'small_LightSeaGreen '
          }
        },
      { where: "col5 > 50000 AND col5 < 60000",
          markerOptions: {
-            iconName: 'small_red'
+            iconName: 'small_LightSlateGray'
          }
        },
      { where: "col5 > 70000 ",
          markerOptions: {
-            iconName: 'Dark_Red'
+            iconName: 'MidnightBlue '
          }
        }
             ],
