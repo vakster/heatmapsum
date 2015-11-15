@@ -1,7 +1,7 @@
 h1 {
 
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s; /* Chrome, Safari, Opera */
     animation-name: example;
     animation-delay:1.7s;
     animation-duration: 8s;
@@ -9,15 +9,15 @@ h1 {
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes example {
-    0%   {color: red;}
-    50%  {Color: yellow;}
+    0%   {color: #A41623;}
+    50%  {Color: #cec62b;}
     100% {color: #ddd;}
 }
 
 /* Standard syntax */
 @keyframes example {
-    0%   {color: red;}
-    50%  {color: yellow;}
+    0%   {color: #A41623;}
+    50%  {color: #cec62b;}
     100% {color: #ddd;}
 }
 input[type=checkbox] {
