@@ -3,7 +3,7 @@ h1 {
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
     animation-name: example;
-    animation-delay:4s;
+    animation-delay:1.7s;
     animation-duration: 8s;
     font-size: 48px;
 }
