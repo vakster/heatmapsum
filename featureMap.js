@@ -44,8 +44,5 @@ function initialize() {
       }
     }
   }
-   google.maps.event.addDomListener(document.getElementById('delivery'),
-            'change', function() {
-              updateMap(layer, tableId, locationColumn);
-        });
-      }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
