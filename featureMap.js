@@ -63,7 +63,7 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
         if (heatmap) {
           layer.setOptions({
             query: {
-              select: 'col4',
+              select: locationColumn,
               from: tableId,
               where: ""
             }
@@ -71,7 +71,7 @@ google.maps.event.addDomListener(document.getElementById('heatmap'),
         } else {
           layer.setOptions({
             query: {
-              select: locationColumn,
+              select: 'col1',
               from: tableId
             }
           });
