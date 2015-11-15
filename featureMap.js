@@ -29,7 +29,7 @@ function initialize() {
       },
       
       styles: [
-       { where: "col1 == col2",
+       { where: "col1 == col3",
          markerOptions: {
             iconName: 'small_purple'
          }
