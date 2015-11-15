@@ -159,9 +159,16 @@ body {
 
 h1 {
 
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
     font-size: 48px;
 
-    color: #ddd;
+    
 
 }
 
