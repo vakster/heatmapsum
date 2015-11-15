@@ -1,4 +1,5 @@
 function initialize() {
+     google.load('visualization', '1');
     var tableId = '1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q';
     var locationColumn = 'col4';
     
