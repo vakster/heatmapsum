@@ -37,7 +37,7 @@ Gregory Vaks
   <icon src="res/icon/ios/icon-120.png" gap:platform="ios" width="120" height="120" />
   <icon src="res/icon/ios/icon-152.png" gap:platform="ios" width="152" height="152" />
   
-  <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
+  <icon src="http://imgur.com/JckZsf1" gap:platform="android" gap:density="ldpi" />
   <icon src="http://imgur.com/liZBvHg" gap:platform="android" gap:density="mdpi" />
   <icon src="http://imgur.com/3NXMgzz" gap:platform="android" gap:density="hdpi" />
   <icon src="http://imgur.com/67BaTss" gap:platform="android" gap:density="xhdpi" />
