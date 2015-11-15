@@ -36,11 +36,15 @@
             
             if ($whichArray == "in") {
                 $this->inStateTuition = array("14" => $data14, "13" => $data13, "12" => $data12, "11" => $data11, "10" => $data10, "9" => $data9, "8" => $data8, "7" => $data7, "6" => $data6, "5" => $data5, "4" => $data4, "3" => $data3, "2" => $data2);
-                echo "In state tuition: " . $inStateTuition . "<br>";
+                echo "In state tuition: ";
+                print_r($this->inStateTuition); 
+                echo "<br>";
             }
             else if ($whichArray == "out") {
                 $this->outStateTuition = array("14" => $data14, "13" => $data13, "12" => $data12, "11" => $data11, "10" => $data10, "9" => $data9, "8" => $data8, "7" => $data7, "6" => $data6, "5" => $data5, "4" => $data4, "3" => $data3, "2" => $data2);
-                echo "Out of state tuition: " . $outStateTuition . "<br>";
+                echo "Out of state tuition: ";
+                print_r($this->outStateTuition); 
+                echo "<br>";            
             }
             else
                 echo "Error";
@@ -60,7 +64,7 @@
             echo "Which array: " . $whichArray . "<br>";
             
             //Count the number of values
-            $numValues = count($inStateTuition);
+            $numValues = count($this->inStateTuition);
             echo "There are " . $numValues . " total tuition values<br>";
             
             //Find Sum of x, y, x^2,, x^3, x^4, x*y, x^2*y
@@ -75,7 +79,7 @@
             
             //Iterate through tuition value array and add appropriate values to running totals
             if ($whichArray == "in") {
-                foreach($inStateTuition as $key => $currentYearCost) {
+                foreach($this->inStateTuition as $key => $currentYearCost) {
                     $sumx += $key;
                     $sumy += $currentYearCost;
                     $sumx2 += $key*$key;
@@ -85,7 +89,7 @@
                     $sumx2y += $key*$key*$currentYearCost;
                 }
             } else if ($whichArray == "out") {
-                foreach($outStateTuition as $key => $currentYearCost) {
+                foreach($this->outStateTuition as $key => $currentYearCost) {
                     $sumx += $key;
                     $sumy += $currentYearCost;
                     $sumx2 += $key*$key;
@@ -124,47 +128,49 @@
         public function getEstimatedTuition($whichArray, $predictionYear) {
             if (($predictionYear >= 2002) && ($predictionYear <= 2100)) {
                 $predictionYear -= 2000;
-                echo "year: " . $predictionYear . "<br>";
                 $predictedTuition = 0;
-                if ($whichArray == "in")
-                    $predictedTuition = ($inStateCoeff[0]*$predictionYear*$predictionYear + $inStateCoeff[1]*$predictionYear + $inStateCoeff[2]);
-                else if ($whichArray == "out")
-                    $predictedTuition = ($outStateCoeff[0]*$predictionYear*$predictionYear + $outStateCoeff[1]*$predictionYear + $outStateCoeff[2]);
+                if ($whichArray == "in") {
+                    $predictedTuition = ($this->inStateCoeff[0]*$predictionYear*$predictionYear + $this->inStateCoeff[1]*$predictionYear + $this->inStateCoeff[2]);
+                }
+                else if ($whichArray == "out") {
+                    $predictedTuition = ($this->outStateCoeff[0]*$predictionYear*$predictionYear + $this->outStateCoeff[1]*$predictionYear + $this->outStateCoeff[2]);
+                }
                 return $predictedTuition;
             }
         }
         
         //getters for all data() -> Return data
-        public function getid() {
-            return $id;
+        public function getID() {
+            return $this->id;
+
         }
         
-        public function getunitID() {
-            return $unitID;
+        public function getUnitID() {
+            return $this->unitID;
         }
         
-        public function getinstitution() {
-            return $institution;
+        public function getInstitution() {
+            return $this->institution;
         }
         
-        public function getzipCode() {
-            return $zipCode;
+        public function getZipCode() {
+            return $this->zipCode;
         }
         
-        public function getaddress() {
-            return $address;
+        public function getAddress() {
+            return $this->address;
         }
         
         public function getcity() {
-            return $city;
+            return $this->city;
         }
         
-        public function getinStateTuition() {
-            return $inStateTuition;
+        public function getInStateTuition() {
+            return $this->inStateTuition;
         }
         
-        public function getoutStateTuition() {
-            return $outStateTuition;
+        public function getOutStateTuition() {
+            return $this->outStateTuition;
         }
         //Setters for some variables (data) if needed???
         
