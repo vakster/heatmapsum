@@ -17,8 +17,7 @@
             <script src="tabHide.js"></script>
             <!--GOOGLE MAP IMPLEMENTATION -->
             <script src="featureMap.js"></script>
-            
-<!--<script type="text/javascript">
+            <!--<script type="text/javascript">
   function initialize() {
     google.maps.visualRefresh = true;
     var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
@@ -71,8 +70,6 @@
   google.maps.event.addDomListener(window, 'load', initialize);
   </script>
   -->
-  
-  
         </head>
         
         <body>
@@ -96,7 +93,6 @@
                     </div>
                 </div>
                 <br />
-                   
                 <div class="row">
                     <ul class="nav nav-tabs">
                         <li class="active">	<a href="#tab1">Map</a>
@@ -110,11 +106,15 @@
                         </li>
                     </ul>
                 </div>
-                
                 <section id="tab1" class="tab-content active">
-                     <div id="googft-mapCanvas"></div> 
+                    <div id="map-canvas"></div>
+                    <div>
+                        <input id="heatmap" type="checkbox" />
+                        <label>Enable heatmap</label>
+                    </div>
+                    <div id="googft-mapCanvas"></div>
                     <div id="wrap">
-             <!--           <label>
+                        <!-- <label>
                             <input id="rdb1" type="radio" name="toggler" value="1"/>In-State</label>
                         <label>
                             <input id="rdb2" type="radio" name="toggler" value="2" />Out-of-State</label>
@@ -136,20 +136,13 @@
                 </section>
                 <br />
                 <div id="main"></div>
-            </div>
-            <div id="footer">
-                <div class="container">
-                    <p class="muted credit">Copyright &copy; 2015 Hack Princeton</p>
-                    <p class="muted credit">Gregory Vaks, Matthew Newman, Joseph Stack, Daniel Saganome, Patrick Monaghan</p>
                 </div>
-            </div>
-
-    <div id="map-canvas"></div>
-    <div>
-      <input id="heatmap" type="checkbox" />
-      <label>Enable heatmap</label>
-    </div>
-          
+                <div id="footer">
+                    <div class="container">
+                        <p class="muted credit">Copyright &copy; 2015 Hack Princeton</p>
+                        <p class="muted credit">Gregory Vaks, Matthew Newman, Joseph Stack, Daniel Saganome, Patrick Monaghan</p>
+                    </div>
+                </div>
         </body>
     
     </html>
