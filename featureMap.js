@@ -27,6 +27,16 @@ function initialize() {
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
         where: ""
       },
+      
+      styles: [
+       { where: "col5 == col3",
+         markerOptions: {
+            iconName: 'large_green'
+         }
+       }
+]});
+      
+      
       options: {
         styleId: 3,
         templateId: 4
