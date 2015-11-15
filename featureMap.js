@@ -45,16 +45,3 @@ function initialize() {
     }
   }
   google.maps.event.addDomListener(window, 'load', initialize);
-  
-  
-
-    </script>
-  </head>
-  <body>
-    <div id="map-canvas"></div>
-    <label>Delivers?</label>
-    <select id="delivery">
-      <option value="">--Select--</option>
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
