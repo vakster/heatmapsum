@@ -20,6 +20,9 @@ function initialize() {
     layer = new google.maps.FusionTablesLayer({
       map: map,
       heatmap: { enabled: false },
+      radius: 16,
+        dissipate: false,
+        maxIntensity: 8,
       query: {
         select: "col4",
         from: "1KHOXHQWl11dYJmHTRzdksJBu3LiRQ7g5Yt0UtM_q",
