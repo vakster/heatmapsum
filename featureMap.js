@@ -29,14 +29,14 @@ function initialize() {
       },
       
       styles: [
-       { where: "col2 == col3",
+       { where: "col1 == col5",
          markerOptions: {
             iconName: 'small_blue'
          }
        },
-       { where: "col2 != col3",
+       { where: "col1 != col5",
          markerOptions: {
-            iconName: 'small_red'
+            iconName: 'small_purple'
          }
        }
             ],
