@@ -3,23 +3,22 @@ h1 {
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
     animation-name: example;
-    animation-duration: 4s;
+    animation-delay:4s;
+    animation-duration: 8s;
     font-size: 48px;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes example {
     0%   {color: red;}
-    25%  {Color: yellow;}
-    50%  {Color: blue;}
-    100% {color: green;}
+    50%  {Color: yellow;}
+    100% {color: #ddd;}
 }
 
 /* Standard syntax */
 @keyframes example {
     0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
+    50%  {color: yellow;}
+    100% {color: #ddd;}
 }
 input[type=checkbox] {
 	visibility: hidden;
