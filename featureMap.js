@@ -47,36 +47,8 @@ function initialize() {
       }
     }
     
-google.maps.event.addDomListener(document.getElementById('heatmap'),
-            'click', function() {
-              var heatmap = document.getElementById('heatmap');
-              layer.setOptions({
-                heatmap: {
-                  enabled: heatmap.checked
-                }
-              });
-        });
+
         
-    // Update the query sent to the Fusion Table Layer based on
-      // the user selection in the select menu
-      function updateMap(layer, tableId, locationColumn) {
-        var delivery = document.getElementById('delivery').value;
-        if (delivery) {
-          layer.setOptions({
-            query: {
-              select: locationColumn,
-              from: tableId,
-              where: "delivery = '" + delivery + "'"
-            }
-          });
-        } else {
-          layer.setOptions({
-            query: {
-              select: locationColumn,
-              from: tableId
-            }
-          });
-    }
-  }
+
 }
   google.maps.event.addDomListener(window, 'load', initialize);
