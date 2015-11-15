@@ -12,8 +12,8 @@
         private $city;
         private $inStateTuition = array();
         private $outStateTuition = array();
-        private $inStateCoeff == array();
-        private $outStateCoeff == array();
+        private $inStateCoeff = array();
+        private $outStateCoeff = array();
         
         //Functions:
         //Initializer(All data) -> store in respective locations, call function 2
@@ -58,17 +58,9 @@
         //Get quadratic formula coefficients() -> calculates values of a, b, and c for quadratic equation
         public function quadReg($whichArray) {
             echo "Which array: " . $whichArray . "<br>";
+            
             //Count the number of values
-            $tuitionValues = array();
-            if ($whichArray == "in") {
-                $tuitionValues = $inStateTuition;
-                echo "In tuition values: " . $tuitionValues . "<br>";
-            }
-            else if ($whichArray == "out") {
-                $tuitionValues = $outStateTuition;
-                echo "Out tuition values: " . $tuitionValues . "<br>";
-            }
-            $numValues = count($tuitionValues);
+            $numValues = count($inStateTuition);
             echo "There are " . $numValues . " total tuition values<br>";
             
             //Find Sum of x, y, x^2,, x^3, x^4, x*y, x^2*y
@@ -82,14 +74,26 @@
             $sumx2y = 0;
             
             //Iterate through tuition value array and add appropriate values to running totals
-            foreach($tuitionValues as $key => $currentYearCost) {
-                $sumx += $key;
-                $sumy += $currentYearCost;
-                $sumx2 += $key*$key;
-                $sumx3 += $key*$key*$key;
-                $sumx4 += $key*$key*$key*$key;
-                $sumxy += $key*$currentYearCost;
-                $sumx2y += $key*$key*$currentYearCost;
+            if ($whichArray == "in") {
+                foreach($inStateTuition as $key => $currentYearCost) {
+                    $sumx += $key;
+                    $sumy += $currentYearCost;
+                    $sumx2 += $key*$key;
+                    $sumx3 += $key*$key*$key;
+                    $sumx4 += $key*$key*$key*$key;
+                    $sumxy += $key*$currentYearCost;
+                    $sumx2y += $key*$key*$currentYearCost;
+                }
+            } else if ($whichArray == "out") {
+                foreach($outStateTuition as $key => $currentYearCost) {
+                    $sumx += $key;
+                    $sumy += $currentYearCost;
+                    $sumx2 += $key*$key;
+                    $sumx3 += $key*$key*$key;
+                    $sumx4 += $key*$key*$key*$key;
+                    $sumxy += $key*$currentYearCost;
+                    $sumx2y += $key*$key*$currentYearCost;
+                }
             }
             echo "Sums:<br>" . $sumx . "<br>" . $sumy . "<br>" . $sumx2 . "<br>" . $sumx3 . "<br>" . $sumx4 . "<br>" . $sumxy . "<br>" . $sumx2y . "<br>";
             
@@ -106,7 +110,8 @@
             $a = (( (($sumx2y) - (($sumx2 * $sumy) / $numValues)) * (($sumx2) - (($sumx * $sumx) / $numValues)) ) - ((($sumxy) - (($sumx * $sumy) / $numValues)) * (($sumx3) - (($sumx2 * $sumx) / $numValues)) )) / (( (($sumx2) - (($sumx * $sumx) / $numValues)) * (($sumx4) - (($sumx2*$sumx2) / $numValues))) - ((($sumx3) - (($sumx2 * $sumx) / $numValues)) * (($sumx3) - (($sumx2 * $sumx) / $numValues)) ));
             $b = (( (($sumxy) - (($sumx * $sumy) / $numValues)) * (($sumx4) - (($sumx2*$sumx2) / $numValues)) ) - ((($sumx2y) - (($sumx2 * $sumy) / $numValues)) * (($sumx3) - (($sumx2 * $sumx) / $numValues)) )) / (( (($sumx2) - (($sumx * $sumx) / $numValues)) * (($sumx4) - (($sumx2*$sumx2) / $numValues))) - ((($sumx3) - (($sumx2 * $sumx) / $numValues)) * (($sumx3) - (($sumx2 * $sumx) / $numValues)) ));
             $c = ( $sumy / $numValues ) - ( $b * ( $sumx / $numValues )) - ( $a * ( $sumx2 / $numValues ));
-            echo "a: " . $a . " b: " . $b . " c: " . $c "<br>";
+            echo "a: " . $a . " b: " . $b . " c: " . $c . "<br>";
+            
             if ($whichArray == "in")
                 $this->inStateCoeff = array($a, $b, $c);
             else if ($whichArray == "out")
